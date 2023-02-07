@@ -9,16 +9,16 @@ class SearchBarController extends ChangeNotifier {
   }
 
   /// Just clears text.
-  clear() {
+  void clear() {
     _autoCompleteSearch.clearText();
   }
 
   /// Clear and remove focus (Dismiss keyboard)
-  reset() {
+  void reset() {
     _autoCompleteSearch.resetSearchBar();
   }
 
-  clearOverlay() {
+  void clearOverlay() {
     _autoCompleteSearch.clearOverlay();
   }
 }
